@@ -7,5 +7,5 @@
 ### Developers
 
 - [DragunWF](https://github.com/DragunWF) - **Leader, Back-End Developer**
-- [JasDevPH](https://github.com/JasDevPH) - **Front-End Developer, UI/UX Designer**
-- [n-gidan](https://github.com/n-ginan) - **Back-End Developer, Assistant**
+- [JasDevPH](https://github.com/JasDevPH) - **UI/UX Designer, Front-End Developer**
+- [n-ginan](https://github.com/n-ginan)  - **Assistant, Back-End Developer**
