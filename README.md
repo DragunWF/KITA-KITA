@@ -6,9 +6,9 @@
 
 ### Developers
 
-- [DragunWF](https://github.com/DragunWF) - **Leader, Back-End Developer**
+- [DragunWF](https://github.com/DragunWF) - **Back-End Developer, Leader**
 - [JasDevPH](https://github.com/JasDevPH) - **Front-End Developer, UI/UX Designer**
-- [n-gidan](https://github.com/n-ginan) - **Assistant, Back-End Developer**
+- [n-gidan](https://github.com/n-ginan) - **Back-End Developer, Assistant**
 
 ## Features
 
@@ -22,8 +22,7 @@
   - The user have a specific limitations on the access of its full features based on there position in the business.
 - **Attendance and Payroll Management System:**
   - **Attendance System:** The manager or owner have a features that every day he/she can generate a 8 pin code to distribute for there staff to enter on there account to mark them present for the today.
-  - **Payroll System:** the owner can set the amount of salary per week that will automatically deducted to the owner business account.
-  - Once the salary reflected to the staff and manager they can withdraw it through the ATM.
+  - **Payroll System:** The owner can set the amount of salary per week that will automatically deducted to the owner business account. Once the salary reflected to the staff and manager they can withdraw it through the ATM.
 - **Financial Tracking Chart:**
   - The owner can track the weekly and monthly sales and financial status.
 - **Inventory Monitoring and Alerts:**
