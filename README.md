@@ -31,3 +31,12 @@
   - The app can track if the items is already expired through giving its date when they receive the products in the inventory.
 - **Automated Revenue Tracking:**
   - This features automatically tracks and display the daily, weekly revenue.
+
+## Specifics
+
+- Android 10 (API level 29)
+- Primarily tested for portrait view
+
+### SQLite3 Entity Relationship Model
+
+### Firebase Database Diagram
