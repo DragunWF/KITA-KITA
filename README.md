@@ -37,6 +37,11 @@
 - Android 10 (API level 29)
 - Primarily tested for portrait view
 
+### Miscelleneous
+
+- [Link to Figma: UI/UX Design](<https://www.figma.com/file/pwLvQ01skPEplOd4rashJp/(P.O.S)-KITA-KITA?type=design&node-id=0%3A1&mode=design&t=AVeI6d4q5r2OMBuP-1>)
+- [Link to Lucid Chart: SQLite3 Entity Relationship Model](https://lucid.app/lucidchart/ecf49928-a728-4c1a-9861-85500ffde9ff/edit?invitationId=inv_aa8995e4-5db3-408b-a497-fce25f2b602a)
+
 ### SQLite3 Entity Relationship Model
 
 ### Firebase Database Diagram
