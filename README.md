@@ -36,7 +36,6 @@
 
 - Android 10 (API level 29)
 - Primarily tested for portrait view
-- [Link to Figma Design](<https://www.figma.com/file/pwLvQ01skPEplOd4rashJp/(P.O.S)-KITA-KITA?type=design&node-id=0-1&mode=design&t=AVeI6d4q5r2OMBuP-0>)
 
 ### SQLite3 Entity Relationship Model
 
