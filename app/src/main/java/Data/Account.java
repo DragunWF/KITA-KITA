@@ -10,6 +10,11 @@ public class Account {
     private int contact;
     private String email;
     private String position;
+
+    public Account() {
+
+    }
+
     public Account(int userID, String username, String password, String firstName, String lastName, int age, int contact, String email, String position) {
         this.userID = userID;
         this.username = username;
