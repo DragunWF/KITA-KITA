@@ -6,6 +6,7 @@ public class Business {
     private String businessType;
     private String businessContact;
     private String businessCode;
+    private String businessName;
     private String email;
     private String location;
 
@@ -13,12 +14,13 @@ public class Business {
 
     }
 
-    public Business(int businessID, int ownerID, String businessType, String businessContact, String businessCode, String email, String location) {
+    public Business(int businessID, int ownerID, String businessType, String businessContact, String businessCode, String businessName, String email, String location) {
         this.businessID = businessID;
         this.ownerID = ownerID;
         this.businessType = businessType;
         this.businessContact = businessContact;
         this.businessCode = businessCode;
+        this.businessName = businessName;
         this.email = email;
         this.location = location;
     }
@@ -62,6 +64,10 @@ public class Business {
     public void setBusinessCode(String businessCode) {
         this.businessCode = businessCode;
     }
+
+    public String getBusinessName() {return businessName;}
+
+    public void setBusinessName(String businessName) {this.businessName = businessName;}
 
     public String getEmail() {
         return email;
