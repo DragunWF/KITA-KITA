@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "28943931430",
-    "project_id": "kita-kita-841b4",
-    "storage_bucket": "kita-kita-841b4.appspot.com"
+    "project_number": "560950464304",
+    "project_id": "kita-kita-406e7",
+    "storage_bucket": "kita-kita-406e7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:28943931430:android:ccc694e3340866d2006ee7",
+        "mobilesdk_app_id": "1:560950464304:android:57b9b840989a4335e182f5",
         "android_client_info": {
           "package_name": "com.example.kita_kita"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD1e4mHtSYetUYLq55PWD-dY1IU05GLU7U"
+          "current_key": "AIzaSyCAWaU_Zof0aMaZ_AE8TbugOemYBavwvlM"
         }
       ],
       "services": {
