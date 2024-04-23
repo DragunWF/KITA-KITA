@@ -1,7 +1,6 @@
 package Data;
 
 public class Account {
-    private int userID;
     private String username;
     private String password;
     private String firstName;
@@ -15,8 +14,7 @@ public class Account {
 
     }
 
-    public Account(int userID, String username, String password, String firstName, String lastName, int age, int contact, String email, String position) {
-        this.userID = userID;
+    public Account(String username, String password, String firstName, String lastName, int age, int contact, String email, String position) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -25,14 +23,6 @@ public class Account {
         this.contact = contact;
         this.email = email;
         this.position = position;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
     }
 
     public String getUsername() {
