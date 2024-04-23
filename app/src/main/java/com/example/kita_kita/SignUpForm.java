@@ -22,7 +22,7 @@ public class SignUpForm extends AppCompatActivity {
     private EditText businessCode;
     private EditText email;
     private Button signUpBtn;
-    private RadioGroup jobRbtn;
+    private RadioGroup jobRbtnGroup;
     private RadioButton businessOwner;
     private RadioButton manager;
     private RadioButton staff;
@@ -41,6 +41,10 @@ public class SignUpForm extends AppCompatActivity {
         businessCode = findViewById(R.id.inputBusinessCodeSignUp);
         email = findViewById(R.id.inputEmailSignUp);
         signUpBtn = findViewById(R.id.signUpBtn);
+        jobRbtnGroup = findViewById(R.id.jobRbtnGroup);
+        businessOwner = findViewById(R.id.businessOwnerRbtn);
+        manager = findViewById(R.id.managerRbtn);
+        staff = findViewById(R.id.staffRbtn);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
