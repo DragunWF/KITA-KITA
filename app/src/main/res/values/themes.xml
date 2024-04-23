@@ -1,9 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.KITAKITA" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.KITAKITA" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="android:button">@drawable/primary_btn</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="font">@font/nunito_reg</item>
     </style>
+
 
     <style name="Theme.KITAKITA" parent="Base.Theme.KITAKITA" />
 </resources>

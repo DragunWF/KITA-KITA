@@ -13,6 +13,18 @@
         android:theme="@style/Theme.KITAKITA"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpForm"
+            android:exported="false" />
+        <activity
+            android:name=".LogInForm"
+            android:exported="false" />
+        <activity
+            android:name=".LandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
