@@ -13,6 +13,9 @@
         android:theme="@style/Theme.KITAKITA"
         tools:targetApi="31">
         <activity
+            android:name=".BusinessCode"
+            android:exported="false" />
+        <activity
             android:name=".SignUpForm"
             android:exported="false" />
         <activity
