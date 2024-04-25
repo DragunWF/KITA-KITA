@@ -69,23 +69,23 @@ public class SignUpForm extends AppCompatActivity {
 
     private void validateInput() {
         int ageNum = Integer.parseInt(String.valueOf(age.getText()));
-        if (isEmpty(firstName)) {
+        if (Utils.isEmpty(firstName)) {
             toast("First Name field cannot be empty!");
-        } else if (isEmpty(lastName)) {
+        } else if (Utils.isEmpty(lastName)) {
             toast("Last Name field cannot be empty!");
-        } else if (isEmpty(username)) {
+        } else if (Utils.isEmpty(username)) {
             toast("Username field cannot be empty!");
-        } else if (isEmpty(password)) {
+        } else if (Utils.isEmpty(password)) {
             toast("Password field cannot be empty!");
-        } else if (isEmpty(age) || ageNum <= 0) {
+        } else if (Utils.isEmpty(age) || ageNum <= 0) {
             toast("Age cannot be empty and must be a positive number!");
-        } else if (isEmpty(contact)) {
+        } else if (Utils.isEmpty(contact)) {
             toast("Contact field cannot be empty!");
-        } else if (isEmpty(email)) {
+        } else if (Utils.isEmpty(email)) {
             toast("Email field cannot be empty!");
         } else if (!businessOwner.isChecked() && !manager.isChecked() && !staff.isChecked()) {
             toast("Please select at least one job/position!");
-        } else if (manager.isChecked() && staff.isChecked() && isEmpty(businessCode)) {
+        } else if (manager.isChecked() && staff.isChecked() && Utils.isEmpty(businessCode)) {
             toast("You have to enter a valid business code!");
         } else {
             // TODO: Make the users go to the needed page
@@ -95,10 +95,6 @@ public class SignUpForm extends AppCompatActivity {
                 // TODO: Send user to other page
             }
         }
-    }
-
-    private boolean isEmpty(EditText text) {
-        return String.valueOf(text.getText()).isEmpty();
     }
 
     private void toast(String message) {
