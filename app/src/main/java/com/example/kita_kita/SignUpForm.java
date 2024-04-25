@@ -43,12 +43,15 @@ public class SignUpForm extends AppCompatActivity {
 
         firstName = findViewById(R.id.inputFirstNameSignUp);
         lastName = findViewById(R.id.inputLastNameSignUp);
+
         username = findViewById(R.id.inputUsernameSignUp);
         password = findViewById(R.id.inputPasswordSignUp);
+
         age = findViewById(R.id.inputAgeSignUp);
         contact = findViewById(R.id.inputContactSignUp);
         businessCode = findViewById(R.id.inputBusinessCodeSignUp);
         email = findViewById(R.id.inputEmailSignUp);
+
         signUpBtn = findViewById(R.id.signUpBtn);
         jobRbtnGroup = findViewById(R.id.jobRbtnGroup);
         businessOwner = findViewById(R.id.businessOwnerRbtn);
@@ -76,6 +79,21 @@ public class SignUpForm extends AppCompatActivity {
             toast("Password field cannot be empty!");
         } else if (isEmpty(age) || ageNum <= 0) {
             toast("Age cannot be empty and must be a positive number!");
+        } else if (isEmpty(contact)) {
+            toast("Contact field cannot be empty!");
+        } else if (isEmpty(email)) {
+            toast("Email field cannot be empty!");
+        } else if (!businessOwner.isChecked() && !manager.isChecked() && !staff.isChecked()) {
+            toast("Please select at least one job/position!");
+        } else if (manager.isChecked() && staff.isChecked() && isEmpty(businessCode)) {
+            toast("You have to enter a valid business code!");
+        } else {
+            // TODO: Make the users go to the needed page
+            if (businessOwner.isChecked()) {
+                new Intent(this, BusinessCode.class);
+            } else {
+                // TODO: Send user to other page
+            }
         }
     }
 
