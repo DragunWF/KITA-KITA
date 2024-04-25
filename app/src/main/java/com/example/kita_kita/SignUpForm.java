@@ -13,22 +13,28 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import Data.Database;
+import com.example.kita_kita.utils.Utils;
+
+// import Data.Database;
 
 public class SignUpForm extends AppCompatActivity {
     private EditText firstName;
     private EditText lastName;
+
     private EditText username;
     private EditText password;
+
     private EditText age;
     private EditText contact;
     private EditText businessCode;
     private EditText email;
+
     private Button signUpBtn;
     private RadioGroup jobRbtnGroup;
     private RadioButton businessOwner;
     private RadioButton manager;
     private RadioButton staff;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +61,29 @@ public class SignUpForm extends AppCompatActivity {
             return insets;
         });
 
-        signUpBtn.setOnClickListener(v -> {
+        signUpBtn.setOnClickListener(v -> validateInput());
+    }
 
-        });
+    private void validateInput() {
+        int ageNum = Integer.parseInt(String.valueOf(age.getText()));
+        if (isEmpty(firstName)) {
+            toast("First Name field cannot be empty!");
+        } else if (isEmpty(lastName)) {
+            toast("Last Name field cannot be empty!");
+        } else if (isEmpty(username)) {
+            toast("Username field cannot be empty!");
+        } else if (isEmpty(password)) {
+            toast("Password field cannot be empty!");
+        } else if (isEmpty(age) || ageNum <= 0) {
+            toast("Age cannot be empty and must be a positive number!");
+        }
+    }
+
+    private boolean isEmpty(EditText text) {
+        return String.valueOf(text.getText()).isEmpty();
+    }
+
+    private void toast(String message) {
+        Utils.toast(this, message);
     }
 }
