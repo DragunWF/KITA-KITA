@@ -68,7 +68,14 @@ public class SignUpForm extends AppCompatActivity {
     }
 
     private void validateInput() {
-        int ageNum = Integer.parseInt(String.valueOf(age.getText()));
+        int ageNum;
+        try {
+            ageNum = Integer.parseInt(String.valueOf(age.getText()));
+        } catch (NumberFormatException nfe) {
+            toast("Invalid age input!");
+            return;
+        }
+
         if (Utils.isEmpty(firstName)) {
             toast("First Name field cannot be empty!");
         } else if (Utils.isEmpty(lastName)) {
