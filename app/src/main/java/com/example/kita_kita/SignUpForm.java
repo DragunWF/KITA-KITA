@@ -1,5 +1,6 @@
 package com.example.kita_kita;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -102,6 +103,37 @@ public class SignUpForm extends AppCompatActivity {
                 // TODO: Send user to other page
             }
         }
+    }
+
+    private void dialogBox() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(String.format("First Name: %s\nLast Name: %s\nUsername: %s\nPassword: %s\nJob Position: %s\n" +
+                                         "Age: %s\nContact Number: %s\n Email: %s"
+                                         , Utils.getText(firstName), Utils.getText(lastName)
+                                         , Utils.getText(username), hidePassword(password)
+                                         , jobPosition(), Utils.getText(age)
+                                         , Utils.getText(contact), Utils.getText(email)))
+                                         .setTitle("Credential Validator");
+        builder.create().show();
+    }
+
+    private String hidePassword(EditText password) {
+        StringBuilder pass = new StringBuilder(Utils.getText(password));
+        for (int i = 0; i < pass.length(); i++) {
+            pass.setCharAt(i, '*');
+        }
+        return String.valueOf(pass);
+    }
+
+    private String jobPosition() {
+        if (businessOwner.isChecked()) {
+            return "Business Owner";
+        } else if (manager.isChecked()) {
+            return "Manager";
+        } else if (staff.isChecked()) {
+            return "Staff";
+        }
+        return null;
     }
 
     private void toast(String message) {
