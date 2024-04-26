@@ -16,6 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.kita_kita.utils.Utils;
 
+import java.util.concurrent.atomic.AtomicReference;
+
 // import Data.Database;
 
 public class SignUpForm extends AppCompatActivity {
@@ -107,13 +109,15 @@ public class SignUpForm extends AppCompatActivity {
 
     private void dialogBox() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AtomicReference<String> passwordVisibility = new AtomicReference<>(hidePassword(password));
         builder.setMessage(String.format("First Name: %s\nLast Name: %s\nUsername: %s\nPassword: %s\nJob Position: %s\n" +
                                          "Age: %s\nContact Number: %s\n Email: %s"
                                          , Utils.getText(firstName), Utils.getText(lastName)
-                                         , Utils.getText(username), hidePassword(password)
+                                         , Utils.getText(username), passwordVisibility
                                          , jobPosition(), Utils.getText(age)
                                          , Utils.getText(contact), Utils.getText(email)))
                                          .setTitle("Credential Validator");
+        builder.setNeutralButton("Show Password", (v, i) -> passwordVisibility.set(Utils.getText(password)));
         builder.create().show();
     }
 
