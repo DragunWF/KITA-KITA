@@ -67,10 +67,10 @@ public class SignUpForm extends AppCompatActivity {
             return insets;
         });
 
-        signUpBtn.setOnClickListener(v -> validateInput());
+        signUpBtn.setOnClickListener(v -> registerUser());
     }
 
-    private void validateInput() {
+    private void registerUser() {
         int ageNum;
         try {
             ageNum = Integer.parseInt(String.valueOf(age.getText()));
