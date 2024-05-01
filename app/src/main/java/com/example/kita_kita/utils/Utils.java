@@ -17,6 +17,10 @@ public class Utils {
         return String.valueOf(text.getText()).isEmpty();
     }
 
+    public static boolean codeExists(String code) {
+        return true; // TODO: Implement a check on the database
+    }
+
     public static String getText(EditText text) {
         return String.valueOf(text.getText());
     }
