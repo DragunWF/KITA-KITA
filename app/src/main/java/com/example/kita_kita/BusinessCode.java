@@ -27,13 +27,20 @@ public class BusinessCode extends AppCompatActivity {
             return insets;
         });
 
+        // TODO: Store generated code in the database
+        generatedCode = generateCode();
         generatedCodeText = findViewById(R.id.generatedCode);
-        generatedCode = String.valueOf(generatedCodeText.getText());
+        generatedCodeText.setText(generatedCode);
 
         doneBtn = findViewById(R.id.doneBtnBusinessCode);
         doneBtn.setOnClickListener(v -> {
             // TODO: Send user to the main activity
-            // new Intent(BusinessCode.this, );
+            // startActivity(new Intent(BusinessCode.this, ));
         });
+    }
+
+    private String generateCode() {
+        final int MAX = 99999999, MIN = 10000000;
+        return String.valueOf((int)Math.floor(Math.random() * (MAX - MIN) + MIN));
     }
 }
