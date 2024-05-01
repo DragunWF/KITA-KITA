@@ -100,7 +100,7 @@ public class SignUpForm extends AppCompatActivity {
         } else {
             // TODO: Make the users go to the needed page
             if (businessOwner.isChecked()) {
-                new Intent(this, BusinessCode.class);
+                startActivity(new Intent(this, BusinessCode.class));
             } else {
                 // TODO: Send user to other page
             }
