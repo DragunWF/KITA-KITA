@@ -1,4 +1,4 @@
-package Data;
+package com.example.kita_kita.data;
 
 public class Category {
     private int categoryID;

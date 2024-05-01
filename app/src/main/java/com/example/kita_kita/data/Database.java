@@ -1,4 +1,4 @@
-package Data;
+package com.example.kita_kita.data;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

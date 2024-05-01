@@ -1,6 +1,4 @@
-package Controller;
-
-import android.view.View;
+package com.example.kita_kita.controller;
 
 public class SignUpController {
     public String positionRadioButton(String position) {
